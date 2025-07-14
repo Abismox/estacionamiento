@@ -1,0 +1,9 @@
+# Entorno virtual de Python
+venv/
+
+# Base de datos SQLite
+data/estacionamiento.db
+
+# Archivos compilados de Python
+__pycache__/
+*.py[cod]
