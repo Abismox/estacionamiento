@@ -1,9 +1,11 @@
-# Entorno virtual de Python
-venv/
+# Backend
+app_Estacionamiento/venv/
+app_Estacionamiento/data/estacionamiento.db
 
-# Base de datos SQLite
-data/estacionamiento.db
+# Frontend
+frontend/node_modules/
+frontend/dist/
 
-# Archivos compilados de Python
-__pycache__/
-*.py[cod]
+# Generales
+.DS_Store
+Thumbs.db
