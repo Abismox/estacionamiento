@@ -1,5 +1,6 @@
 from sqlmodel import Field, SQLModel
 from datetime import datetime, date
+from typing import Optional
 
 class Vehiculo(SQLModel, table=True):
     vehiculo_id: int = Field(default=None, primary_key=True)
@@ -50,3 +51,13 @@ class Suscripcion(SQLModel, table=True):
     fecha_fin: date
     monto_mes: float
     estado: str  # activa / vencida
+    
+    # DTO para crear entrada (sin tabla en DB)
+
+class EntradaCreate(SQLModel):
+    placa: str
+    marca: Optional[str] = None
+    modelo: Optional[str] = None
+    color: Optional[str] = None
+    tipo: str      # auto, moto, camión...
+    plaza_id: int
